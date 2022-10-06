@@ -1,12 +1,10 @@
+// 필수 리액트 구동 모듈들이다.
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+// 초기 화면을 구성하는 사용자 코드이다.
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
+// 리액트 엔진이 화면을 출력하는 코드이다.
+// id가 root인 엘리먼트에 컴포넌트를 출력한다.
 ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
